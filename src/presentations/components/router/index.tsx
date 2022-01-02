@@ -4,11 +4,12 @@ import { Login } from '@/presentations/pages'
 
 const Router: React.FC = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+    null
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/login" element={<Login />} />
+    //   </Routes>
+    // </BrowserRouter>
   )
 }
 
