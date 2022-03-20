@@ -2,7 +2,7 @@ import React from 'react'
 import { render, RenderResult, cleanup, fireEvent } from '@testing-library/react'
 import Login from './'
 import { ValidationStub } from '@/presentations/test'
-import faker from 'faker'
+import faker from '@faker-js/faker'
 import { Authentication, AuthenticationParams } from '@/domain/usecases'
 import { AccountModel } from '@/domain/models'
 import { mockAccountModel } from '@/domain/test'
@@ -13,7 +13,7 @@ class AuthenticationSpy implements Authentication {
 
   async auth (params: AuthenticationParams): Promise<AccountModel> {
     this.params = params
-    return Promise.resolve(this.account)
+    return this.account
   }
 }
 
